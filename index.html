@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gestiona tu biblioteca personal, tus lecturas y tus préstamos.">
+  <title>Biblioteca personal</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#/home" aria-label="Ir al inicio">
+        <span class="brand-icon">B</span>
+        <span>Mi biblioteca</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#/home" data-nav="/home">Inicio</a>
+        <a href="#/books" data-nav="/books">Mi biblioteca</a>
+        <a href="#/books/new" data-nav="/books/new">Añadir libro</a>
+        <a href="#/loans" data-nav="/loans">Préstamos</a>
+        <a href="#/stats" data-nav="/stats">Estadísticas</a>
+      </nav>
+      <div class="sidebar-note">
+        <span class="note-icon">✦</span>
+        <p>Un libro es una puerta a otros mundos.</p>
+      </div>
+      <p class="sidebar-footer">Biblioteca personal · ES6+</p>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" id="page-eyebrow">TU ESPACIO DE LECTURA</p>
+          <h1 id="page-title">Inicio</h1>
+        </div>
+        <a class="button button-primary topbar-action" href="#/books/new">＋ Añadir libro</a>
+      </header>
+      <div id="app" class="page-content" aria-live="polite"></div>
+      <footer class="mobile-footer">Hecho para disfrutar leyendo.</footer>
+    </main>
+  </div>
+</body>
+</html>
